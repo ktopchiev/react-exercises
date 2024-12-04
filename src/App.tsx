@@ -1,10 +1,10 @@
-import './App.css'
+import FetchDataFromAPI from './features/FetchDataFromAPI'
 
 function App() {
 
   return (
     <>
-    
+      <FetchDataFromAPI />
     </>
   )
 }
