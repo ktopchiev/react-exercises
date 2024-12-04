@@ -1,10 +1,13 @@
-import FetchDataFromAPI from './features/FetchDataFromAPI'
+// import FetchDataFromAPI from './features/FetchDataFromAPI'
+
+import Calculator from "./features/Calculator"
 
 function App() {
 
   return (
     <>
-      <FetchDataFromAPI />
+      {/* <FetchDataFromAPI /> */}
+      <Calculator />
     </>
   )
 }
