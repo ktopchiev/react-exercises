@@ -41,6 +41,7 @@ export default function Calculator() {
 
     return (
         <div className="calculator">
+            <h2 style={{ display: 'block' }}>Simple calculator</h2>
             <form>
                 <input
                     id="first"
