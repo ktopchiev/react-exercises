@@ -5,6 +5,14 @@ export default function FetchDataFromAPI() {
 
     const url = "https://reqres.in/api/users?page=1";
 
+    interface User {
+        id: number,
+        email: string,
+        first_name: string,
+        last_name: string,
+        avatar: string
+    }
+
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -16,7 +24,7 @@ export default function FetchDataFromAPI() {
         <div>
             <ul>
                 {data &&
-                    data.map(item =>
+                    data.map((item: User) =>
                         <li
                             key={item.id}
                         >
